@@ -22,8 +22,6 @@ public class ReviewDTO {
     public ReviewDTO() {
     }
     
-    
-    
 	public ReviewDTO(Long id, String text, Long movieId, Long userId, String userName, String userEmail) {
 		this.id = id;
 		this.text = text;
@@ -41,7 +39,7 @@ public class ReviewDTO {
 		userName = entity.getUser().getName();
 		userEmail = entity.getUser().getEmail();
 	}
-
+	
 	public Long getId() {
 		return id;
 	}
